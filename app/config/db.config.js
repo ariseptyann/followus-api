@@ -1,8 +1,8 @@
 module.exports = {
-    HOST: "localhost",
-    USER: "root",
-    PASSWORD: "",
-    DB: "followus",
+    HOST: "b6mv3wmauqhlcyrxz726-mysql.services.clever-cloud.com",
+    USER: "u5qwai0kfu6jz9vg",
+    PASSWORD: "0JSs2wXqbPNe601PgpTO",
+    DB: "b6mv3wmauqhlcyrxz726",
     dialect: "mysql",
     pool: {
         max: 5, // maximum number of connection in pool
