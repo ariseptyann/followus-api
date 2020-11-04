@@ -9,10 +9,10 @@ module.exports = app => {
     router.post("/", upload.single(), JsonWebToken.authenticateJWT, produk.create);
 
     // Retrieve all produk
-    router.get("/", JsonWebToken.authenticateJWT, produk.findAll);
+    router.get("/", produk.findAll);
 
     // Retrieve single produk
-    router.get("/:id", JsonWebToken.authenticateJWT, produk.findOne);
+    router.get("/:id", produk.findOne);
 
     // Update produk
     router.put("/:id", JsonWebToken.authenticateJWT, produk.update);
