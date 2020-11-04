@@ -8,7 +8,7 @@ module.exports = app => {
     router.post("/", JsonWebToken.authenticateJWT, kategori.create);
 
     // Retrieve all kategori
-    router.get("/", JsonWebToken.authenticateJWT, kategori.findAll);
+    router.get("/", kategori.findAll);
 
     // Update kategori
     router.put("/:id", JsonWebToken.authenticateJWT, kategori.update);
