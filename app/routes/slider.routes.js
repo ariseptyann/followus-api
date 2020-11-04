@@ -8,7 +8,7 @@ module.exports = app => {
     router.post("/", JsonWebToken.authenticateJWT, slider.create);
 
     // Retrieve all slider
-    router.get("/", JsonWebToken.authenticateJWT, slider.findAll);
+    router.get("/", slider.findAll);
 
     // Update slider
     router.put("/:id", JsonWebToken.authenticateJWT, slider.update);
